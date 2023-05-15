@@ -16,22 +16,23 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+
                 <form action="cadastro.php" method="post" autocomplete="on">
 
-                    <div>
+                    <div class="campo">
                         <span id="iconeuser" class="material-icons">person
-                        <input type="email" name="login" id="ilogin" required placeholder="seu email">
+                        <input type="email" name="login" id="ilogin" required placeholder="seu email" autocomplete="email">
                         <label for="ilogin"></label>
                     </div>
                     <br>
-                    <div>
+                    <div class="campo">
                         <span id="iconesenha" class="material-icons">vpn_key
-                        <input type="password" name="senha" id="isenha" required placeholder="sua senha">
+                        <input type="password" name="senha" id="isenha" required placeholder="sua senha" autocomplete="current-password" minlength="8">
                         <label for="isenha"></label>
                     </div>
                     <br>
                     <input id="entrar" type="submit" value="Entrar"> <br>
-                    <button>Esqueci a senha</button>
+                    <button><a href="#">Esqueci a senha</a></button>
             
                 </form>
             </div>
